@@ -1,0 +1,10 @@
+.user {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--color-black-800);
+  color: vat(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

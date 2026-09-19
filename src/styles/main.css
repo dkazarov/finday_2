@@ -1,3 +1,7 @@
 @import './reset.css';
 @import './variables.css';
 @import './global.css';
+
+@import '../components/header/header.css';
+@import '../components/logo/logo.css';
+@import '../components/user/user.css';

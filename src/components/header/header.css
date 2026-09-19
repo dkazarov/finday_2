@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: var(--color-bg-app); */
+  /* background-color: red; */
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+}

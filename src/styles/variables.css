@@ -4,13 +4,11 @@
      ======================================== */
 
   --color-bg: #080d11;
+  --color-bg-app: #11161a;
 
-  --color-surface: #0e151a;
-  --color-surface-elevated: #131c22;
-  --color-surface-hover: #18232a;
+  --color-black-800: #242323;
 
-  --color-border: #1b282f;
-  --color-border-light: #26353d;
+  --color-grey-400: #848484;
 
   --color-text-primary: #f4f7f8;
   --color-text-secondary: #9aaab3;
@@ -95,6 +93,11 @@
      ======================================== */
 
   --container-width: 480px;
+  --cintainer-width-lg: 768px;
+  --container-width-xl: 1024px;
+  /* --container-width-2xl: 1280px; */
+  /* --container-width-3xl: 1536px; */
+  /* --container-width-4xl: 1920px; */
 
   --page-padding: clamp(1rem, 4vw, 1.5rem);
 

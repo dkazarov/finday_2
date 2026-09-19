@@ -24,7 +24,17 @@ body {
   max-width: var(--container-width);
   min-height: 100vh;
   margin: 0 auto;
-  padding: var(--space-4) var(--page-padding);
+}
+
+@media (min-width: 768px) {
+  #app {
+    max-width: var(--cintainer-width-lg);
+  }
+}
+@media (min-width: 1024px) {
+  #app {
+    max-width: var(--container-width-xl);
+  }
 }
 
 button,
@@ -43,25 +53,4 @@ button:disabled {
 ::selection {
   background: var(--color-accent);
   color: var(--color-bg);
-}
-
-/* ========================================
-   Mobile First
-   ======================================== */
-
-@media (min-width: 768px) {
-  :root {
-    --page-padding: 1.5rem;
-  }
-
-  #app {
-    padding-top: var(--space-6);
-    padding-bottom: var(--space-6);
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --page-padding: 2rem;
-  }
 }

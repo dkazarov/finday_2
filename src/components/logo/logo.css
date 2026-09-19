@@ -1,0 +1,37 @@
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    145deg,
+    rgba(34, 230, 176, 0.18),
+    rgba(34, 230, 176, 0.04)
+  );
+  border: 1px solid rgba(34, 230, 176, 0.2);
+}
+.brand-mark svg {
+  width: 26px;
+  height: 26px;
+}
+.brand-title {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 13px;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
