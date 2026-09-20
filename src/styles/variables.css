@@ -4,7 +4,7 @@
      ======================================== */
 
   --color-bg: #080d11;
-  --color-bg-app: #11161a;
+  --color-bg-app: #161c21;
 
   --color-black-800: #242323;
 
@@ -28,8 +28,7 @@
      Typography
      ======================================== */
 
-  --font-family:
-    Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --font-size-xs: clamp(0.6875rem, 1.8vw, 0.75rem);
   --font-size-sm: clamp(0.75rem, 2vw, 0.875rem);

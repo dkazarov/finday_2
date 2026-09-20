@@ -1,0 +1,94 @@
+<section class="dashboard" aria-label="Фінансовий огляд">
+  <!-- Віджет денних витрат -->
+  <section class="dashboard__spending">
+    <div class="dashboard__spending-chart">
+      <svg class="dashboard__spending-progress" aria-hidden="true" viewBox="0 0 320 180">
+        <!-- Фонова дуга -->
+        <path
+          class="dashboard__spending-arc dashboard__spending-arc--background"
+          d="M 35 150 A 125 125 0 0 1 285 150"
+        ></path>
+
+        <!-- Прогрес -->
+        <path
+          class="dashboard__spending-arc dashboard__spending-arc--progress"
+          d="M 35 150 A 125 125 0 0 1 285 150"
+          style="stroke-dasharray: 400; stroke-dashoffset: 0"
+        ></path>
+      </svg>
+
+      <div class="dashboard__spending-content">
+        <p class="dashboard__spending-amount" id="daily-spending-amount">
+          ₴ 1250 <span class="daily-spending-amount-currency">грн</span>
+        </p>
+
+        <p class="dashboard__spending-additional" id="daily-spending-additional" hidden="">
+          +₴ 0 можна витратити додатково завдяки надходженням
+        </p>
+
+        <span class="dashboard__spending-percent" id="daily-spending-percent">0% <span>використано</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Загальний баланс -->
+  <section class="dashboard__balance">
+    <p class="dashboard__balance-label">Загальний баланс</p>
+
+    <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
+  </section>
+
+  <!-- Список рахунків -->
+  <section class="dashboard__accounts">
+    <h2 class="dashboard__accounts-title">Мої рахунки</h2>
+
+    <div class="dashboard__accounts-list" id="accounts-list">
+      <article class="dashboard__account">
+        <p class="dashboard__account-name">Готівка</p>
+
+        <p class="dashboard__account-balance">₴ 0</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Форма додавання рахунку -->
+  <section class="dashboard__account-form">
+    <h2 class="dashboard__account-form-title">Додати рахунок</h2>
+
+    <form id="account-form">
+      <div class="form-field">
+        <label for="account-name"> Назва рахунку </label>
+
+        <input id="account-name" type="text" name="account-name" placeholder="Наприклад, Моя картка" required="" />
+      </div>
+
+      <div class="form-field">
+        <label for="account-type"> Тип рахунку </label>
+
+        <select id="account-type" name="account-type" required="">
+          <option value="cash">Готівка</option>
+
+          <option value="card">Картка</option>
+
+          <option value="bank">Банк</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="account-balance"> Початковий баланс </label>
+
+        <input
+          id="account-balance"
+          type="number"
+          name="account-balance"
+          min="0"
+          step="0.01"
+          placeholder="0"
+          required=""
+        />
+      </div>
+
+      <button type="submit">Додати рахунок</button>
+    </form>
+  </section>
+</section>
