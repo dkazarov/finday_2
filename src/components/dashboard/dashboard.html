@@ -32,63 +32,26 @@
   </section>
 
   <!-- Загальний баланс -->
-  <section class="dashboard__balance">
-    <p class="dashboard__balance-label">Загальний баланс</p>
+  <div class="dashboard__balance-inner">
+    <section class="dashboard__balance">
+      <p class="dashboard__balance-label">Загальний баланс</p>
 
-    <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
-  </section>
+      <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
+    </section>
+    <section class="dashboard__balance">
+      <p class="dashboard__balance-label">Готівка</p>
 
-  <!-- Список рахунків -->
-  <section class="dashboard__accounts">
-    <h2 class="dashboard__accounts-title">Мої рахунки</h2>
+      <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
+    </section>
+    <section class="dashboard__balance">
+      <p class="dashboard__balance-label">Банківські рахунки</p>
 
-    <div class="dashboard__accounts-list" id="accounts-list">
-      <article class="dashboard__account">
-        <p class="dashboard__account-name">Готівка</p>
+      <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
+    </section>
+    <section class="dashboard__balance">
+      <p class="dashboard__balance-label">Банківські рахунки</p>
 
-        <p class="dashboard__account-balance">₴ 0</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Форма додавання рахунку -->
-  <section class="dashboard__account-form">
-    <h2 class="dashboard__account-form-title">Додати рахунок</h2>
-
-    <form id="account-form">
-      <div class="form-field">
-        <label for="account-name"> Назва рахунку </label>
-
-        <input id="account-name" type="text" name="account-name" placeholder="Наприклад, Моя картка" required="" />
-      </div>
-
-      <div class="form-field">
-        <label for="account-type"> Тип рахунку </label>
-
-        <select id="account-type" name="account-type" required="">
-          <option value="cash">Готівка</option>
-
-          <option value="card">Картка</option>
-
-          <option value="bank">Банк</option>
-        </select>
-      </div>
-
-      <div class="form-field">
-        <label for="account-balance"> Початковий баланс </label>
-
-        <input
-          id="account-balance"
-          type="number"
-          name="account-balance"
-          min="0"
-          step="0.01"
-          placeholder="0"
-          required=""
-        />
-      </div>
-
-      <button type="submit">Додати рахунок</button>
-    </form>
-  </section>
+      <p class="dashboard__balance-amount" id="total-balance">₴ 0</p>
+    </section>
+  </div>
 </section>
