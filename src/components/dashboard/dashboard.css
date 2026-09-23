@@ -104,17 +104,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-2);
+  background-color: var(--color-bg-app);
 }
 
 .dashboard__balance {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: nowrap;
   gap: var(--space-2);
-  padding: var(--space-4);
-  border-radius: 1rem;
-  background-color: var(--color-bg-app);
+  padding: var(--space-2);
 
   &:last-child {
     display: none;
