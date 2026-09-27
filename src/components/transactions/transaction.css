@@ -10,11 +10,16 @@
 .transaction__operation-all {
   display: flex;
 }
+.transaction__list {
+  height: 40rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 .transaction__card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-3);
+  padding: var(--space-4);
   background-color: var(--color-bg-app);
   border-radius: var(--radius-md);
   margin-bottom: var(--space-2);
