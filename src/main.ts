@@ -1,6 +1,6 @@
 import './styles/main.css';
 
-import { createIcons, ChevronRight, ShoppingCart, House, Wallet, Plus, ChartNoAxesCombined, Settings } from 'lucide';
+import { createIcons, ChevronRight, ShoppingCart, House, Wallet, Plus, ChartNoAxesCombined, Settings, Target } from 'lucide';
 
 createIcons({
   icons: {
@@ -11,5 +11,6 @@ createIcons({
     Plus,
     ChartNoAxesCombined,
     Settings,
+    Target,
   },
 });
