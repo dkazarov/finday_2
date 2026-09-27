@@ -191,6 +191,12 @@
   }
 }
 
+@media (max-height: 726px) {
+  .dashboard__balance-inner {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .dashboard__spending-amount {
     font-size: var(--font-size-5xl);
