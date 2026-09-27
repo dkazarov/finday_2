@@ -22,17 +22,18 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
-  min-height: 100dvh;
+  height: 100dvh;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #main {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {

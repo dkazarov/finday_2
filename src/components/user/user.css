@@ -2,9 +2,10 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: var(--color-black-800);
+  background-color: var(--color-bg-medium);
   color: vat(--color-text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--font-size-xl);
 }

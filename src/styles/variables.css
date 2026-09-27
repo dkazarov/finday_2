@@ -5,6 +5,7 @@
 
   --color-bg: #080d11;
   --color-bg-app: #161c21;
+  --color-bg-medium: #222527;
 
   --color-black-800: #242323;
 
@@ -63,7 +64,7 @@
   --space-8: 2rem;
   --space-10: 2.5rem;
   --space-12: 3rem;
-  --space-16: 4rem;
+  --space-14: 3.8rem;
 
   /* ========================================
      Border Radius

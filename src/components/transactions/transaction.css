@@ -1,4 +1,8 @@
 .transaction {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
   padding: 0 var(--space-4);
 }
 .transaction__header {
@@ -11,7 +15,8 @@
   display: flex;
 }
 .transaction__list {
-  height: 40rem;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
