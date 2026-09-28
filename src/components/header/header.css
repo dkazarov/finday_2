@@ -7,7 +7,7 @@
   border-radius: var(--radius-md);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 726px) {
   .brand-mark {
     width: 4rem !important;
     height: 4rem !important;

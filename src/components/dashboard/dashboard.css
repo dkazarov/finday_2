@@ -172,9 +172,9 @@
   font-weight: 600;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 525px) {
   .dashboard__spending-amount {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-5xl);
   }
   .dashboard__spending-percent {
     font-size: var(--font-size-xl);
@@ -190,13 +190,7 @@
     margin-top: -30%;
   }
 }
-
-@media (max-height: 726px) {
-  .dashboard__balance-inner {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 726px) {
   .dashboard {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -207,10 +201,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .dashboard__spending-amount {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-3xl);
   }
   .dashboard__spending-percent {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-1xl);
   }
   .dashboard__spending-content {
     margin-top: -32%;
@@ -220,5 +214,10 @@
   }
   .dashboard__balance-amount {
     font-size: var(--font-size-3xl);
+  }
+}
+@media (min-width: 1024px) {
+  .dashboard__spending-amount {
+    font-size: var(--font-size-4xl);
   }
 }

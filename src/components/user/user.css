@@ -9,3 +9,11 @@
   justify-content: center;
   font-size: var(--font-size-xl);
 }
+
+@media (min-width: 726px) {
+  .user {
+    width: 4rem;
+    height: 4rem;
+    font-size: var(--font-size-2xl);
+  }
+}
