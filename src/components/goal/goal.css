@@ -4,11 +4,15 @@
   margin-bottom: -1rem;
 }
 .goal-card {
-  padding: var(--space-4) var(--space-4) var(--space-6) var(--space-4);
+  padding: var(--space-2) var(--space-4) var(--space-6) var(--space-4);
   background-color: var(--color-bg-app);
   display: flex;
   align-items: center;
   margin-bottom: var(--space-4);
+
+  svg {
+    cursor: pointer;
+  }
 }
 .goal-card__icon {
   display: flex;

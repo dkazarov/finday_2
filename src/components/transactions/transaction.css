@@ -28,6 +28,7 @@
   background-color: var(--color-bg-app);
   border-radius: var(--radius-md);
   margin-bottom: var(--space-2);
+  cursor: pointer;
 }
 .transaction__icon {
   display: flex;

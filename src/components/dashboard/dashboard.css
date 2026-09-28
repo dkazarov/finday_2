@@ -67,7 +67,6 @@
 
 .dashboard__spending-amount {
   margin: var(--space-2) 0 0;
-
   color: var(--color-text-primary);
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
@@ -106,7 +105,6 @@
   gap: var(--space-2);
   background-color: var(--color-bg-app);
 }
-
 .dashboard__balance {
   display: flex;
   flex-direction: column;
@@ -119,7 +117,6 @@
     justify-content: space-between;
   }
 }
-
 .dashboard__balance-label {
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);

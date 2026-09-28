@@ -3,13 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/dkazarov/finday_2.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "gh-pages -d dist"
   },
   "lint-staged": {
     "*.{ts,js}": [
@@ -35,6 +37,7 @@
     "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "lucide": "^1.47.0",
     "prettier-plugin-organize-attributes": "^1.0.0"
   }
