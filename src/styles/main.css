@@ -8,4 +8,5 @@
 @import '../components/dashboard/dashboard.css';
 @import '../components/transactions/transaction.css';
 @import '../components/mobile-menu/mobile-menu.css';
+@import '../components/add-button/add-button.css';
 @import '../components/goal/goal.css';

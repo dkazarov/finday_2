@@ -6,21 +6,20 @@
   --color-bg: #080d11;
   --color-bg-app: #161c21;
   --color-bg-medium: #20292f;
+  --color-bg-light: #2a3034;
 
   --color-black-800: #242323;
-
-  --color-grey-400: #848484;
 
   --color-text-primary: #f4f7f8;
   --color-text-secondary: #9aaab3;
   --color-text-tertiary: #687780;
 
-  --color-accent: #16e6a5;
+  --color-accent: #19c38d;
   --color-accent-light: #42f3ba;
   --color-accent-dark: #014a33;
 
   --color-income: #16e6a5;
-  --color-expense: #ff4d4d;
+  --color-expense: #ff8367;
 
   --color-warning: #ffb84d;
   --color-info: #596cff;
@@ -31,7 +30,7 @@
 
   --font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --font-size-xs: clamp(0.6875rem, 1.8vw, 0.75rem);
+  /* --font-size-xs: clamp(0.6875rem, 1.8vw, 0.75rem);
   --font-size-sm: clamp(0.75rem, 2vw, 0.875rem);
   --font-size-md: clamp(0.875rem, 2.2vw, 1rem);
   --font-size-lg: clamp(1rem, 2.5vw, 1.125rem);
@@ -39,7 +38,17 @@
   --font-size-2xl: clamp(1.25rem, 4vw, 1.5rem);
   --font-size-3xl: clamp(1.75rem, 6vw, 2.25rem);
   --font-size-4xl: clamp(2.5rem, 9vw, 3.5rem);
-  --font-size-5xl: clamp(4.25rem, 9vw, 8.5rem);
+  --font-size-5xl: clamp(4.25rem, 9vw, 8.5rem); */
+
+  --font-size-xs: 12px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 36px;
+  --font-size-3xl: 42px;
+  --font-size-4xl: 46px;
+  --font-size-5xl: 52px;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;

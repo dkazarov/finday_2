@@ -3,16 +3,23 @@
   flex-direction: column;
   flex: 1;
   min-height: 0;
-  padding: 0 var(--space-4);
+  padding: 0 var(--space-2);
 }
 .transaction__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: var(--space-2);
+  font-size: var(--font-size-xs);
 }
 .transaction__operation-all {
   display: flex;
+  align-items: center;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 .transaction__list {
   flex: 1;
@@ -24,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-4);
+  padding: var(--space-2);
   background-color: var(--color-bg-app);
   border-radius: var(--radius-md);
   margin-bottom: var(--space-2);
@@ -35,12 +42,12 @@
   align-items: center;
   margin-right: var(--space-4);
   padding: var(--space-2) var(--space-3);
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-bg-light);
   border-radius: var(--radius-md);
 
   svg {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     stroke: var(--color-accent);
   }
 }
@@ -51,16 +58,16 @@
   width: 100%;
 }
 .transaction__score {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   color: var(--color-text-secondary);
 }
 .transaction__category {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-sm);
 }
 .transaction__amount {
   text-align: right;
   color: var(--color-expense);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-1);
 
@@ -71,7 +78,7 @@
 .transaction__time-stamp {
   display: flex;
   color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 .transaction__date {
   margin-right: var(--space-2);
