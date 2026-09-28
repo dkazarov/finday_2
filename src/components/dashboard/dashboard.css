@@ -174,7 +174,7 @@
 
 @media (min-width: 580px) {
   .dashboard__spending-amount {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-4xl);
   }
   .dashboard__spending-percent {
     font-size: var(--font-size-xl);
@@ -196,15 +196,29 @@
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  .dashboard__balance-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .dashboard__spending-amount {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-4xl);
   }
   .dashboard__spending-percent {
     font-size: var(--font-size-2xl);
   }
   .dashboard__spending-content {
-    margin-top: -25%;
+    margin-top: -32%;
+  }
+  .dashboard__balance-label {
+    font-size: var(--font-size-md);
+  }
+  .dashboard__balance-amount {
+    font-size: var(--font-size-3xl);
   }
 }
