@@ -5,6 +5,7 @@
   max-width: 95%;
   margin: 0 auto;
   margin-bottom: var(--space-4);
+  border: 1px solid var(--color-bg-lighter);
 }
 .mobile-nav__list {
   display: grid;
