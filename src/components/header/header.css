@@ -6,3 +6,17 @@
   margin-bottom: var(--space-4);
   border-radius: var(--radius-md);
 }
+
+@media (min-width: 1024px) {
+  .brand-mark {
+    width: 4rem !important;
+    height: 4rem !important;
+    svg {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+  }
+  .brand-subtitle {
+    font-size: var(--font-size-lg) !important;
+  }
+}
