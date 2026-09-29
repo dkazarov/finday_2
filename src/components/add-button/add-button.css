@@ -1,7 +1,7 @@
 .mobile-nav__add {
   position: absolute;
-  right: 20px;
-  bottom: 80px;
+  right: 1rem;
+  bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,5 +45,11 @@
     box-shadow:
       0 0.3rem 0.8rem rgb(0 0 0 / 30%),
       inset 0 0.2rem 0.4rem rgb(0 0 0 / 20%);
+  }
+}
+
+@media (min-width: 475px) {
+  .mobile-nav__add {
+    bottom: 7.5rem;
   }
 }

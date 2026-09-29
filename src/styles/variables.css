@@ -39,7 +39,8 @@
   --font-size-4xl: clamp(2.5rem, 9vw, 3.5rem);
   --font-size-5xl: clamp(4.25rem, 9vw, 8.5rem); */
 
-  --font-size-xs: 12px;
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
   --font-size-sm: 16px;
   --font-size-md: 18px;
   --font-size-lg: 24px;

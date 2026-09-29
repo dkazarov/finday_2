@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 var(--space-2);
+  margin-bottom: var(--space-2);
 }
 
 .dashboard__spending {
@@ -101,7 +102,6 @@
 
   &:last-child {
     display: none;
-    justify-content: space-between;
   }
 }
 .dashboard__balance-label {
@@ -112,7 +112,7 @@
 
 .dashboard__balance-amount {
   color: var(--color-text-primary);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-lg);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -160,56 +160,121 @@
   .dashboard__balance-inner {
     display: none;
   }
-  .daily-spending-amount-currency {
+  .dashboard__balance-amount {
+    span {
+      display: none;
+    }
   }
 }
 
-/* @media (min-width: 525px) {
-  .dashboard__spending-amount {
-    font-size: var(--font-size-5xl);
-  }
-  .dashboard__spending-percent {
-    font-size: var(--font-size-xl);
+@media (min-width: 375px) {
+  .dashboard__balance {
+    width: 100%;
+    min-width: 0;
+    background-color: var(--color-bg-app);
   }
   .dashboard__balance-inner {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .dashboard__balance:last-child {
     display: flex;
-    justify-content: space-between;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-lg);
   }
   .dashboard__spending-content {
-    margin-top: -30%;
+    margin-top: -120px;
   }
-}
-@media (min-width: 726px) {
-  .dashboard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-  }
-  .dashboard__balance-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .dashboard__spending-amount {
-    font-size: var(--font-size-3xl);
-  }
-  .dashboard__spending-percent {
-    font-size: var(--font-size-1xl);
-  }
-  .dashboard__spending-content {
-    margin-top: -32%;
-  }
-  .dashboard__balance-label {
-    font-size: var(--font-size-md);
-  }
-  .dashboard__balance-amount {
-    font-size: var(--font-size-3xl);
-  }
-}
-@media (min-width: 1024px) {
   .dashboard__spending-amount {
     font-size: var(--font-size-4xl);
   }
-} */
+  .dashboard__balance-label {
+    font-size: var(--font-size-xs);
+  }
+  .dashboard__balance-amount {
+    display: flex;
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (min-width: 575px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-4);
+    height: 180px;
+    align-items: stretch;
+  }
+  .dashboard__spending {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .dashboard__spending-content {
+    margin-top: -6rem;
+  }
+  .dashboard__spending-amount {
+    font-size: var(--font-size-2xl);
+  }
+  .daily-spending-amount-currency {
+    font-size: var(--font-size-sm);
+  }
+  .dashboard__balance-inner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+    width: 100%;
+    max-width: none;
+    height: 180px;
+    background-color: var(--color-bg);
+  }
+  .dashboard__balance {
+    width: 100%;
+    min-width: 0;
+    background-color: var(--color-bg-app);
+
+    &:last-child {
+      display: flex;
+    }
+  }
+  .dashboard__balance-label {
+    font-size: var(--font-size-xs);
+  }
+  .dashboard__balance-amount {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: var(--font-size-md);
+  }
+}
+@media (min-width: 640px) {
+  .dashboard__spending-content {
+    margin-top: -7rem;
+  }
+  .dashboard__balance-amount {
+    display: flex;
+    justify-content: space-between;
+    span {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-left: var(--space-2);
+      font-size: var(--font-size-xxs);
+      color: var(--color-text-secondary);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .dashboard__spending-content {
+    margin-top: -8rem;
+  }
+  .dashboard__spending-amount {
+    font-size: var(--font-size-4xl);
+  }
+  .dashboard__balance-amount {
+    span {
+      font-size: var(--font-size-xs);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .dashboard__balance-amount {
+    font-size: var(--font-size-lg);
+  }
+}

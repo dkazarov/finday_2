@@ -11,3 +11,16 @@
     font-size: var(--font-size-md) !important;
   }
 }
+@media (min-width: 726px) {
+  .brand-title {
+    font-size: var(--font-size-lg) !important;
+  }
+  .brand-subtitle {
+    font-size: var(--font-size-xs) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .brand-subtitle {
+    font-size: var(--font-size-sm) !important;
+  }
+}

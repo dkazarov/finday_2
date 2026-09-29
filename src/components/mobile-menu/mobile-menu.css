@@ -47,3 +47,13 @@
     }
   }
 }
+@media (min-width: 475px) {
+  .mobile-nav {
+    padding: var(--space-3) var(--space-2);
+  }
+  .mobile-nav__link {
+    span {
+      display: block;
+    }
+  }
+}

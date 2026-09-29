@@ -83,3 +83,12 @@
 .transaction__date {
   margin-right: var(--space-2);
 }
+
+@media (min-width: 375px) {
+  .transaction__header {
+    font-size: var(--font-size-sm);
+  }
+  .transaction__amount {
+    font-size: var(--font-size-md);
+  }
+}
